@@ -1,19 +1,4 @@
-import os
-import requests
-import pandas as pd
-import numpy as np
-import time
-from datetime import datetime, timedelta
-import pytz
-from statsmodels.tsa.holtwinters import ExponentialSmoothing
-from statsmodels.tsa.arima.model import ARIMA
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, SimpleRNN
-from tensorflow.keras.optimizers import Adam
-
-API_KEY = os.getenv('POLYGON_API_KEY', 'aInVSiBB_P0R_7fQhff0sgU5vpI4f2E1')
+API_KEY = os.getenv('POLYGON_API_KEY', '')
 BASE_URL = "https://api.polygon.io"
 
 # Data mining step
